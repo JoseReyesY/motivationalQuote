@@ -1,0 +1,61 @@
+.quoteContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 6.0rem;
+    font-weight: bolder;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.quoteAuthor {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.likeButton {
+    width: 50px;
+    height: 42px;
+    padding: 5px;
+    background-color: var(--blue);
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.likeButton:hover {
+    animation: hoverSize 0.2s forwards;
+}
+
+.activeHeart {
+    fill: var(--red);
+    animation: hoverColor 0.1s forwards;
+}
+
+@keyframes hoverColor {
+    0% {
+        fill: black;
+    }
+
+    100% {
+        fill: var(--red);
+    }
+}
