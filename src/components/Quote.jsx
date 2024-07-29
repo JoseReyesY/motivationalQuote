@@ -49,7 +49,7 @@ export default function Quote() {
     const activeHeart = like ? styles.activeHeart : styles.heart;
     
     return(
-        <div>
+        <div className={ styles.mainContainer }>
             <motion.div 
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -61,6 +61,7 @@ export default function Quote() {
                 className={ styles.quoteContainer }
             >
                 <p className={ styles.quote }>"{ quote.text }"</p>
+            
                 <div className={ styles.infoContainer }>
                 <p className={ styles.quoteAuthor }>- { newAuthor }</p>
                 <motion.div
